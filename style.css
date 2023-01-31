@@ -1,62 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 body {
-	margin: 0;
-	background-color: #1f2937;
-	color: white;
+    margin: 0;
+    background-color: #1F2937;
+    color: white;
 }
 
 #container {
-	max-width: 550px;
-	margin: 0 auto;
+    max-width: 550px;
+    margin: 0 auto
 }
 h1 {
-	font-family: "Karla";
-	font-style: normal;
-	font-weight: 800;
-	font-size: 40px;
-	line-height: 40px;
-	letter-spacing: -0.025em;
-	margin-bottom: 10px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    margin-bottom: 10px;
 }
 h3 {
-	font-family: "Inter";
-	font-weight: 300;
-	font-size: 20px;
-	color: #d5d4d8;
-	margin-top: 0;
-	margin-bottom: 50px;
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 20px;
+    color: #D5D4D8;
+    margin-top: 0;
+    margin-bottom: 50px;
+
 }
 
+
 .accent {
-	color: #4adf86;
+    color: #4ADF86;
 }
 
 .btn {
-	background-color: #10b981;
-	color: white;
-	padding: 10px 15px;
-	border-radius: 5px;
-	font-family: "Inter";
+    background-color: #10B981;
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 5px
 }
 #password-container {
-	margin-top: 40px;
-	border-top: 1px solid #2f3e53;
-	display: flex;
-	justify-content: space-between;
-	column-gap: 20px;
-	padding-top: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #2F3E53;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.hint {
+    margin-top: 0;
+    color: #D5D4D8;
+}
+.password-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
 }
 .password {
-	font-family: "Inter";
-	background-color: #2f3e53;
-	color: #5def92;
-	width: 90%;
-	text-align: center;
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-
-	letter-spacing: 0.8px;
+    font-family: "inter";
+    background-color: #2F3E53;
+    color: #5DEF92;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+    letter-spacing: 0.8px;
 }
