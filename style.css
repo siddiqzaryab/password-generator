@@ -5,12 +5,15 @@ body {
     margin: 0;
     background-color: #1F2937;
     color: white;
+    padding: auto 0;
+    
 }
 
 #container {
     max-width: 550px;
-    margin: 0 auto
+    margin: 0 auto;
 }
+
 h1 {
     font-family: 'Karla';
     font-style: normal;
@@ -20,6 +23,7 @@ h1 {
     letter-spacing: -0.025em;
     margin-bottom: 10px;
 }
+
 h3 {
     font-family: "Inter";
     font-weight: 300;
@@ -30,17 +34,18 @@ h3 {
 
 }
 
-
 .accent {
     color: #4ADF86;
 }
 
 .btn {
+    font-family: "Inter";
     background-color: #10B981;
     color: white; 
     padding: 10px 15px;
     border-radius: 5px
 }
+
 #password-container {
     margin-top: 40px;
     border-top: 1px solid #2F3E53;
@@ -48,15 +53,19 @@ h3 {
     flex-direction: column;
     padding-top: 20px;
 }
+
 .hint {
+    font-family: "Inter";
     margin-top: 0;
     color: #D5D4D8;
 }
+
 .password-buttons {
     display: flex;
     justify-content: center;
     column-gap: 10px;
 }
+
 .password {
     font-family: "inter";
     background-color: #2F3E53;
@@ -66,6 +75,5 @@ h3 {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    
     letter-spacing: 0.8px;
 }
