@@ -5,7 +5,7 @@ body {
     margin: 0;
     background-color: #1F2937;
     color: white;
-    padding: auto 0;
+    padding: 50% 0;
     
 }
 
@@ -35,12 +35,12 @@ h3 {
 }
 
 .accent {
-    color: #4ADF86;
+    color: #10B981;
 }
 
 .btn {
     font-family: "Inter";
-    background-color: #10B981;
+    background-color: #4ADF86;
     color: white; 
     padding: 10px 15px;
     border-radius: 5px
