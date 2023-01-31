@@ -39,12 +39,12 @@ h3 {
 }
 
 .accent {
-    color: #10B981;
+    color: #4ADF86;
 }
 
 .btn {
     font-family: "Inter";
-    background-color: #4ADF86;
+    background-color: #10B981;
     color: white; 
     padding: 10px 15px;
     border-radius: 5px
