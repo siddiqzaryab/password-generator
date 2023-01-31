@@ -1,31 +1,22 @@
 <html>
-	<head>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div id="container">
-			<h1>
-				Generate a <br /><span class="accent">random password</span>
-			</h1>
-			<h3>Never use an insecure password again</h3>
-
-			<button class="btn" onclick="generateRandomPassword()">
-				Generate Passwords
-			</button>
-			<div id="password-container">
-				<p class="hint">Click on either password to copy</p>
-				<button id="first-password-el" class="password accent"></button>
-				<button
-					id="second-password-el"
-					class="password accent"
-				></button>
-			</div>
-		</div>
-
-		<script src="script.js"></script>
-	</body>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Generate a <br><span class="accent">random password</span></h1>
+            <h3>Never use an insecure password again</h3>
+            
+            <button class="btn" onclick="generateRandomPassword()">Generate Passwords</button>
+            <div id="password-container">
+                <p class="hint">Click on either passwords to copy</p>
+                <div class="password-buttons">
+                    <button id="first-password-el" class="password accent"></button>
+                    <button id="second-password-el" class="password accent"></button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
 </html>
