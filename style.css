@@ -8,8 +8,8 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;    
     min-height: 90vh;
-    display: flex;
-    flex-direction: column;
+/*     display: flex;
+    flex-direction: column; */
     
 }
 
