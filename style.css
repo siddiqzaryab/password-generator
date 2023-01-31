@@ -5,8 +5,10 @@ body {
     margin: 0;
     background-color: #1F2937;
     color: white;
-    padding-top: 50px;
-    height: 100vh;
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -81,4 +83,7 @@ h3 {
     border: none;
     border-radius: 5px;
     letter-spacing: 0.8px;
+}
+footer {
+    margin-top: auto
 }
