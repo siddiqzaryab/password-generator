@@ -94,8 +94,7 @@ const characters = [
 ]
 
 // Picking the password elemetn from the DOM
-let firstPasswordEl = document.getElementById("first-password-el")
-let secondPasswordEl = document.getElementById("second-password-el")
+const passwordBtns = document.getElementById("password-buttons")
 
 // Setting Password element's text content. You can also keep/set them empty
 firstPasswordEl.textContent = "..."
@@ -123,9 +122,9 @@ function generateRandomPassword() {
 	secondPasswordEl.textContent = secondPass
 }
 
-// EXTRA 'Copy to clipboard' FEATURE
-firstPasswordEl.addEventListener("click", function () {
-	let passText = firstPasswordEl.textContent
+
+passwordBtns.addEventListener("click", function(e){
+	let passText = document.getElementById(e.target.id).textContent
 	console.log(passText.length)
 	if (passText.length >= 4) {
 		navigator.clipboard.writeText(passText)
@@ -135,13 +134,25 @@ firstPasswordEl.addEventListener("click", function () {
 	}
 })
 
-secondPasswordEl.addEventListener("click", function () {
-	let passText = secondPasswordEl.textContent
-	console.log(passText.length)
-	if (passText.length >= 4) {
-		navigator.clipboard.writeText(passText)
-		alert("Copied to clipboard")
-	} else {
-		alert("Failed to copy")
-	}
-})
+// EXTRA 'Copy to clipboard' FEATURE
+// firstPasswordEl.addEventListener("click", function () {
+// 	let passText = firstPasswordEl.textContent
+// 	console.log(passText.length)
+// 	if (passText.length >= 4) {
+// 		navigator.clipboard.writeText(passText)
+// 		alert("Copied to clipboard")
+// 	} else {
+// 		alert("Failed to copy")
+// 	}
+// })
+
+// secondPasswordEl.addEventListener("click", function () {
+// 	let passText = secondPasswordEl.textContent
+// 	console.log(passText.length)
+// 	if (passText.length >= 4) {
+// 		navigator.clipboard.writeText(passText)
+// 		alert("Copied to clipboard")
+// 	} else {
+// 		alert("Failed to copy")
+// 	}
+// })
