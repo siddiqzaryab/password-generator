@@ -95,6 +95,8 @@ const characters = [
 
 // Picking the password elemetn from the DOM
 const passwordBtns = document.getElementById("password-buttons")
+const firstPasswordEl = document.getElementById("first-password-el")
+const secondPasswordEl = document.getElementById("second-password-el")
 
 // Setting Password element's text content. You can also keep/set them empty
 firstPasswordEl.textContent = "..."
