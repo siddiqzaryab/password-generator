@@ -74,27 +74,15 @@ const characters = [
 	"*",
 	"(",
 	")",
-	"_",
-	"-",
-	"+",
-	"=",
 	"{",
 	"[",
 	"}",
 	"]",
-	",",
-	"|",
-	":",
-	";",
-	"<",
-	">",
-	".",
-	"?",
-	"/",
+	
 ]
 
 // Picking the password elemetn from the DOM
-const passwordBtns = document.getElementById("password-buttons")
+const passwordBtns = document.getElementById("password-btns")
 const firstPasswordEl = document.getElementById("first-password-el")
 const secondPasswordEl = document.getElementById("second-password-el")
 
@@ -125,36 +113,19 @@ function generateRandomPassword() {
 }
 
 
+// EXTRA 'Copy to clipboard' FEATURE
+
 passwordBtns.addEventListener("click", function(e){
 	let passText = document.getElementById(e.target.id).textContent
-	console.log(passText.length)
 	if (passText.length >= 4) {
 		navigator.clipboard.writeText(passText)
-		alert("Copied to clipboard")
+		document.getElementById("alert").textContent = "Copied!"
+		setTimeout(function(){
+		document.getElementById("alert").textContent = ""
+
+		}, 5000)
 	} else {
-		alert("Failed to copy")
+		document.getElementById("alert").textContent = "You must generate a password!"
 	}
 })
 
-// EXTRA 'Copy to clipboard' FEATURE
-// firstPasswordEl.addEventListener("click", function () {
-// 	let passText = firstPasswordEl.textContent
-// 	console.log(passText.length)
-// 	if (passText.length >= 4) {
-// 		navigator.clipboard.writeText(passText)
-// 		alert("Copied to clipboard")
-// 	} else {
-// 		alert("Failed to copy")
-// 	}
-// })
-
-// secondPasswordEl.addEventListener("click", function () {
-// 	let passText = secondPasswordEl.textContent
-// 	console.log(passText.length)
-// 	if (passText.length >= 4) {
-// 		navigator.clipboard.writeText(passText)
-// 		alert("Copied to clipboard")
-// 	} else {
-// 		alert("Failed to copy")
-// 	}
-// })

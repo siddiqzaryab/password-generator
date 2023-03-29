@@ -41,16 +41,18 @@ h3 {
 
 }
 
-.accent {
-    color: #4ADF86;
-}
-
-.btn {
+.generate-btn {
     font-family: "Inter";
     background-color: #10B981;
     color: white; 
     padding: 10px 15px;
-    border-radius: 5px
+    border-radius: 5px;
+    border: none;
+}
+.generate-btn:hover {
+    background-color: #0ea371;
+
+
 }
 
 #password-container {
@@ -67,9 +69,9 @@ h3 {
     color: #D5D4D8;
 }
 
-.password-buttons {
+.password-btns {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     column-gap: 10px;
 }
 
@@ -83,6 +85,11 @@ h3 {
     border: none;
     border-radius: 5px;
     letter-spacing: 0.8px;
+}
+#alert {
+    font-family: "inter";
+    color: #5DEF92;
+    
 }
 footer {
     max-width: 550px;
